@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SearchOrder from "../features/order/SearchOrder";
 
 function Header() {
   return (
     <header>
       <Link to="/">J&J Pizza NYC</Link>
-      <h1>The best pizza in NYC</h1>
+      <SearchOrder />
+      <p>The best pizza in NYC</p>
     </header>
   );
 }
