@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       {
         path: '/menu',
         element: <Menu />,
-        loader: menuLoader,
+        loader: menuLoader, // useFetcher calls this loader, then in menuLoader it automatically calls for getMenu function
         errorElement: <Error />,
       },
       { path: '/cart', element: <Cart /> },
